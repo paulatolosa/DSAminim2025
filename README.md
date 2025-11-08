@@ -36,4 +36,5 @@ PART 2
 
 --> Fins aqui la segona part del mínim amb funcionament correcte i complet
 
+Nota: Totes les captures que es demanen estan adjuntes en aquest respositori
   
