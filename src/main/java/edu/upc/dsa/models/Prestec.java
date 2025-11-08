@@ -7,17 +7,9 @@ public class Prestec {
     String idLlibre;
     String dataPrestec;
     String dataFinal;
-    boolean enTramit;
+    String estatTramit;
 
-    public boolean isEnTramit() {
-        return enTramit;
-    }
-
-    public void setEnTramit(boolean enTramit) {
-        this.enTramit = enTramit;
-    }
-
-
+    public Prestec() {}
 
     public Prestec(String id, String idLector, String idLlibre, String dataPrestec, String dataFinal) {
         this.id = id;
@@ -25,6 +17,15 @@ public class Prestec {
         this.idLlibre = idLlibre;
         this.dataPrestec = dataPrestec;
         this.dataFinal = dataFinal;
+    }
+
+    public String getEnTramit() {
+        return estatTramit;
+    }
+
+
+    public void setEnTramit(String estatTramit) {
+        this.estatTramit = estatTramit;
     }
 
     public String getId() {

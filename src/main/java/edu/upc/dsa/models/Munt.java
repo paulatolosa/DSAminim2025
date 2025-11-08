@@ -1,13 +1,20 @@
 package edu.upc.dsa.models;
 
 import java.util.Stack;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Munt {
+
+
     Stack<Llibre> muntLlibres = new Stack<>();
     int maxLlibres=10;
 
     public Munt(){
         this.muntLlibres=new Stack<>();
+    }
+
+    public Stack<Llibre> getMuntLlibres() {
+        return muntLlibres;
     }
 
     public boolean addLlibre(Llibre llibre){
@@ -37,6 +44,10 @@ public class Munt {
             return null;
         }
         return muntLlibres.pop();
+    }
+
+    public int GetMida(){
+        return muntLlibres.size();
     }
 
 }

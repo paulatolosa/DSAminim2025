@@ -8,11 +8,13 @@ public class Lector {
     String nom;
     String cognom;
     String dni;
-    Float dataNeix;
+    String dataNeix;
     String origenNeix;
     String adreca;
 
-    public Lector(String id, String nom, String cognom, String dni, Float dataNeix, String origenNeix, String adreca) {
+    public Lector() {}
+
+    public Lector(String id, String nom, String cognom, String dni, String dataNeix, String origenNeix, String adreca) {
         this.id = id;
         this.nom = nom;
         this.cognom = cognom;
@@ -54,11 +56,11 @@ public class Lector {
         this.dni = dni;
     }
 
-    public Float getDataNeix() {
+    public String getDataNeix() {
         return dataNeix;
     }
 
-    public void setDataNeix(Float dataNeix) {
+    public void setDataNeix(String dataNeix) {
         this.dataNeix = dataNeix;
     }
 

@@ -10,16 +10,9 @@ public class Llibre {
     int numEdicio;
     String autor;
     String tematica;
-
-    public int getNumExemplars() {
-        return numExemplars;
-    }
-
-    public void setNumExemplars(int numExemplars) {
-        this.numExemplars = numExemplars;
-    }
-
     int numExemplars;
+
+    public Llibre(){}
 
     public Llibre(String id, String isbn, String titol, String editorial, int anyPublicacio, int numEdicio, String autor, String tematica) {
         this.id = id;
@@ -31,6 +24,17 @@ public class Llibre {
         this.autor = autor;
         this.tematica = tematica;
     }
+
+    public int getNumExemplars() {
+        return numExemplars;
+    }
+
+    public void setNumExemplars(int numExemplars) {
+        this.numExemplars = numExemplars;
+    }
+
+
+
 
     public String getId() {
         return id;
